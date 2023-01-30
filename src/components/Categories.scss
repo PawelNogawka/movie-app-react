@@ -1,0 +1,17 @@
+.categories {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  overflow: auto;
+  padding: 2rem;
+}
+
+@media (min-width: 1200px) {
+  .categories {
+    flex: 1;
+    position: sticky;
+    top: 16rem;
+    flex-direction: column;
+    height: 70vh;
+  }
+}

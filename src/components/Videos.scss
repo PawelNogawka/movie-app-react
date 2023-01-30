@@ -1,0 +1,12 @@
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  padding: 2rem;
+}
+
+@media (min-width: 1200px) {
+  .videos {
+    flex: 7;
+  }
+}

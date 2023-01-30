@@ -1,0 +1,59 @@
+@import "./variables";
+
+.video-card {
+  flex-basis: 30rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: $gray;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  overflow: hidden;
+
+  &--suggested {
+    min-height: 31rem;
+    min-width: 23rem;
+  }
+
+  &__top {
+    width: 100%;
+    height: 18rem;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    &--suggested {
+      height: 18rem;
+    }
+  }
+
+  &__bottom {
+    padding: 2rem;
+  }
+
+  &__title {
+    font-size: 1.6rem;
+    margin-bottom: 0.4rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: $white-active;
+  }
+
+  &__channel-name {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: $white-disabled;
+  }
+
+  &__published {
+    font-size: 1.2rem;
+    color: $white-disabled;
+  }
+}

@@ -1,0 +1,34 @@
+@import "./variables";
+
+.search-form {
+  display: flex;
+  align-items: center;
+  flex-basis: 40rem;
+  flex-shrink: 1;
+
+  &__input {
+    border: 0;
+    padding: 1.5rem;
+    border-radius: 3rem;
+    background-color: $white-active;
+    width: 100%;
+
+    &:focus {
+      outline: 0;
+      box-shadow: inset 0 0 2px 2px $main;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background: 0;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-left: -3.5rem;
+    transition: all 0.4s ease;
+    font-size: 2rem;
+  }
+}

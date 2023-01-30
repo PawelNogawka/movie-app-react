@@ -1,0 +1,89 @@
+@import "./variables";
+
+.channel-details {
+  padding: 0 2rem;
+  &__img-box {
+    width: 100%;
+    height: 30rem;
+    margin-bottom: 7rem;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 3rem 7rem;
+  }
+
+  &__card {
+    flex: 1;
+    padding: 2rem;
+    background-color: $gray;
+  }
+
+  &__avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__avatar-img {
+    border-radius: 50%;
+  }
+
+  &__title {
+    margin: 2.3rem 0;
+    text-align: center;
+    color: $white-active;
+    font-weight: 500;
+    font-size: 2.7rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    list-style-type: none;
+  }
+
+  &__list-item {
+    color: $white-active;
+    text-transform: capitalize;
+
+    span {
+      margin-left: 0.7rem;
+      color: $white-disabled;
+      font-size: 1.4rem;
+    }
+  }
+
+  &__row {
+    flex: 3;
+  }
+
+  &__desc-title {
+    font-weight: 500;
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    color: $white-active;
+  }
+
+  &__desc-content {
+    margin: 2rem 0;
+    color: $white-disabled;
+  }
+}
+
+@media (min-width: 992px) {
+  .channel-details {
+    &__card {
+      position: sticky;
+      top: 10rem;
+    }
+  }
+}

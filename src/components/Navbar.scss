@@ -1,0 +1,35 @@
+@import "./variables";
+
+.nav {
+  position: sticky;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 3rem;
+  margin-bottom: 3rem;
+  background-color: $bg-color;
+  z-index: 100;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    text-decoration: none;
+  }
+
+  &__logo-icon {
+    color: $main;
+    font-size: 5.5rem;
+  }
+
+  &__logo-name {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: $white-active;
+  }
+}

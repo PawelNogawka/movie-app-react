@@ -1,0 +1,44 @@
+@import "./components/variables";
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  background-color: $bg-color;
+  color: $white-active;
+}
+
+
+.container{
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.api-message{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  font-size:3rem;
+
+  &__error{
+    color:red;
+  }
+
+  &__loading{
+    color:$main;
+  }
+
+}

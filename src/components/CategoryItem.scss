@@ -1,0 +1,18 @@
+@import "./variables";
+
+.category-item {
+  padding: 1rem 3rem;
+  border: 0;
+  background: 0;
+  cursor: pointer;
+  color: $white-active;
+  text-transform: capitalize;
+  font-size: 1.7rem;
+  border-radius: 3rem;
+  transition: all 0.3s ease;
+
+  &--active {
+    background-color: $main;
+    color: $white;
+  }
+}

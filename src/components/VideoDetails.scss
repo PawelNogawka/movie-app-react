@@ -1,0 +1,133 @@
+@import "./variables.scss";
+
+.video-details {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+  gap: 3.3rem;
+
+  &__card {
+    background-color: $gray;
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 1rem;
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__title {
+    font-weight: 400;
+    color: $white-active;
+  }
+
+  &__channelTitle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    color: $white-disabled;
+  }
+
+  &__publishDate {
+    font-size: 1.4rem;
+    color: $white-disabled;
+  }
+  &__stats {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__box {
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 1.4rem;
+    color: $white-active;
+  }
+
+  &__desc {
+    font-size: 1.4rem;
+    color: $white-active;
+  }
+
+  &__player {
+    height: 50vh !important;
+    width: 100% !important;
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    div {
+      padding: 1rem;
+      background-color: $main;
+      border-radius: 3rem;
+      font-size: 1.4rem;
+    }
+  }
+
+  &__comments {
+    color: $white-active;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+  }
+  &__suggested-videos {
+    display: flex;
+    gap: 2.4rem;
+    overflow: auto;
+    width: 100%;
+  }
+}
+
+@media (min-width: 556px) {
+  .video-details {
+    &__player {
+      height: 77vh !important;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .video-details {
+    &__bottom {
+      padding: 2rem;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .video-details {
+    flex-direction: row;
+
+    &__card {
+      flex: 6;
+    }
+
+    &__suggested-videos {
+      position: sticky;
+      top: 12rem;
+      flex: 2;
+      flex-direction: column;
+      height: 92vh;
+    }
+  }
+}
